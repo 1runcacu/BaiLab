@@ -1,0 +1,19 @@
+<!--pages/demo01/movable-view/movable-view.wxml-->
+<view class='container1'>
+  <include src='../../common/head.wxml' />
+  <view class='page-body'>
+    <view class='title1'>运算表达式</view>
+    <view class='demo-box'>
+	<view class='pag'>运算为整个Bai语言的核心部分之一,其实操作都相当容易,数学表达式和我们平常写的数学表达式一致,有些函数只需要查表就可以使用。
+首先重申运算符+ - * # / ^ % 其中+ - */^ %均为常见运算符,对常数的运算此处不再做更多介绍,下面介绍程序的运算(由于向量属于特殊的矩阵,因此不专门介绍向量了),包括我为了适应计算定义的新的运算。
+以下的运算都是包含在表达式体系中的运算,如(1)的常数与矩阵,指的是自定义变量类型为常数或者系统自带常量e和pi,矩阵也是自定义数据类型为矩阵或者向量。</view>
+   </view>
+	<image class='img' src='{{src1}}' mode='scaleToFill'></image>
+	<image class='img' src='{{src2}}' mode='scaleToFill'></image>
+	<image class='img' src='{{src3}}' mode='scaleToFill'></image>
+	<image class='img1' src='{{src4}}' mode='scaleToFill'></image>
+	<view class='pag'>上图先生成a、b两个1矩阵,再利用rand创建随机矩阵作为测试数据,之后求取秩为2 ,化简了行初等型,同时求了逆,计算均是瞬间完成。</view>
+	<image class='img1' src='{{src5}}' mode='scaleToFill'></image>
+  </view>
+  <include src='../../common/foot.wxml' />
+</view>

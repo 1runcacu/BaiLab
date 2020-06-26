@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/plot/plot",
+	"pages/book/book",
+	"pages/bg1/bg1",
+	"pages/bg2/bg2",
+	"pages/pg1/pg1",
+	"pages/pg2/pg2",
+	"pages/pg3/pg3",
+	"pages/pg4/pg4",
+	"pages/je1/je1",
+	"pages/je2/je2"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#629ca0",
+    "navigationBarTitleText": "Bai语言",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#629ca0",
+    "selectedColor": "#328EEB",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_blue.png",
+        "text": "交互"
+      },
+      {
+        "pagePath": "pages/plot/plot",
+        "iconPath": "images/plot.png",
+        "selectedIconPath": "images/plot_blue.png",
+        "text": "绘图"
+      },
+	  {
+        "pagePath": "pages/book/book",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_blue.png",
+        "text": "手册"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

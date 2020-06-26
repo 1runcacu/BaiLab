@@ -1,0 +1,25 @@
+<!--pages/demo01/movable-view/movable-view.wxml-->
+<view class='container1'>
+  <include src='../../common/head.wxml' />
+  <view class='page-body'>
+    <view class='title1'>1.Bai语言概述</view>
+    <view class='demo-box'>
+			<view class='pag'>  当下,普通计算器的能力已然不能满足人们对更高级数学运算（如对矩阵、向量等复杂运算）的需求,传统编程语言如（java、javaScript、c、c++）里的数学表达式都是对（int、float、double）等常规标准数据类型进行运算的,如果要这类编程语言来进行上述高级数学运算,需要自己设计算法编写函数,增加运算成本,实属不易,有力不从心的感觉。虽然可以通过matlab来进行这类计算,但matlab占用内存高,下载安装不易,且matlab表达式必须严格按照语法,才能正常运行。因此,我挑选了matlab几种常用的功能,用c语言优先级的原理,用javaScript语言,独立开发了一个20466字的含参数学表达式分析计算引擎,和一个7765字的指令分析引擎,用这两个引擎制作了程序专用运行环境,类似于一款手机版本（matlab）,取名为Bai语言。以上工作完全自主研发,没参考任何文献以及任何算法,时间虽然仓促,但目前基本可以满足大部分用户的需求。该语言的核心是数学运算与函数图绘制,具有赋值、变量释放、运算、运算精度设置、输出等结构,不同于传统编程语言,不具有选择、判断与循环结构。</view>
+			<view class='pag'>该语言属于交互式解释执行语言,但不同于（python和matlab）的地方在于:</view>
+			<view class='pag'>1.命令可以散乱分布,代码格式要求很低（譬如【si  n（c   osp  i）】这个语句,我们会认为是【sin（cos（pi））】（pi指常量π≈3.1415926）,系统会计算得到【sin（cos（pi）=sin（-1）≈-0.8414...】）;</view>
+			<view class='pag'>2.支持一次性执行多句代码,每句代码之间用"。"中文句号连接,最后一句可不加;</view>
+			<view class='pag'>3.所有中文字符和英文字符可以混和使用,譬如【a=[1；2;3，4,5]】、【sin（pi）】等</view>
+			<view class='pag'>4.变量名随意取,只要不出现关键词和内置运算符、匹配符和函数名序列,譬如:【tsin、fcosg、zcls、as√d】均是不合法的变量名,变量名可以是任意中文汉字,甚至可以是符号,譬如【【，】，\,/,&,",'...】等等,非常自由,有良好的用户体验性。</view>
+			<view class='pag'>内置关键词和关键字共12个,分别系统指令和数据快速创建指令。分别如下:</view>
+			<view class='pag'>系统指令:clear（变量释放） cls（工作日志清除） plot（绘图） setting（设置保留小数点位数） read（控制是否输出） ‘?’快速查询帮助</view>
+			<view class='pag'>数据快速创建:	diag（对角阵） ones（'1'矩阵） zeros（'0'矩阵） eye（单位阵） []（自定义矩阵） :（等差列向量）</view>
+			<view class='pag'>内置运算符（8个）、匹配符（2个）和内置数学函数（22个）共32个,分别如下:</view>
+			<view class='pag'>双目运算符: + - * # / ^ %	单目运算符:√  匹配符:（  ）</view>
+			<view class='pag'>内置数学函数:（三角函数:sin cos tan asin acos atan） （指数与对数:exp ln lg） </view>
+			<view class='pag'>（矩阵与向量:RA（求秩） TA（转置） TN（水平翻转） UP（上下翻转） rref（化简行最简矩阵） inv（求逆） det（求行列式）） </view>
+			<view class='pag'>（附加函数:rand（随机数） abs（绝对值） ceil（上舍入） floor（下舍入） round（四舍五入） sqrt（开平方））</view>
+			<view class='pag'>	输入界面灵活,可以直接输入数学表达式,函数直接连接变量或者常数可以不加括号,绘图操作也相当简单。接下来我将详细介绍Bai语言语法以及交互式界面的使用方法。</view>
+			<image class='img' src='{{src}}' mode='scaleToFill'></image>
+  	</view>
+	</view>
+ </view>

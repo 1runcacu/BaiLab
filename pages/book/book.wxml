@@ -1,0 +1,32 @@
+<!--pages/index.wxml-->
+<view class='container1'>
+  <include src="../common/head.wxml" />
+  <view class='page-body'>
+    <view class='demo-box'>
+      <view class='title'>第一章:绪论</view>
+      <navigator url='/pages/bg1/bg1'>Bai语言概述</navigator>
+      <navigator url='/pages/bg2/bg2'>Bai语言编译器介绍</navigator>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>第二章:Bai语言基础篇</view>
+      <navigator url='/pages/pg1/pg1'>数据创建</navigator>
+      <navigator url='/pages/pg2/pg2'>赋值语句</navigator>
+      <navigator url='/pages/pg3/pg3'>输出语句</navigator>
+      <navigator url='/pages/pg4/pg4'>运算表达式</navigator>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>第三章:Bai语言进阶篇</view>
+      <navigator url='/pages/je1/je1'>函数图像绘制</navigator>
+      <navigator url='/pages/je2/je2'>几个简单的系统指令</navigator>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>第四章:Bai语言入土篇(可跳过)</view>
+      <navigator >Bai语言工作原理</navigator>
+      <navigator >表达式分解&预处理操作</navigator>
+      <navigator >中缀表达式转后缀表达式</navigator>
+      <navigator >后缀表达式的运算</navigator>
+	  <navigator >表达式的优先级</navigator>
+    </view>
+  </view>
+  <include src="../common/foot.wxml" />
+</view>

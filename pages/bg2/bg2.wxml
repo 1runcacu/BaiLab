@@ -1,0 +1,15 @@
+<!--pages/demo01/movable-view/movable-view.wxml-->
+<view class='container1'>
+  <include src='../../common/head.wxml' />
+  <view class='page-body'>
+    <view class='title1'>2.Bai语言编译器介绍</view>
+    <view class='demo-box'>
+			<view class='pag'>  工作区有两块,分为交互区和绘图区,其中交互区也提供了绘图模块,绘图区(属于附加功能)提供了更加快捷方便的绘图功能。</view>
+			<view class='pag'>	交互区由工作结果框、命令输入框、执行按钮、数据栏、绘图框共5个部分组成,命令输入框就是我们输入指令的地方,写入指令代码后,点击执行,程序将识别和计算命令框内所有指令,同时将相关数值储存,指令的执行日志储存打印在工作结果框,新增数据名称会显示在执行按钮下面的数据栏,调用plot可以绘制图形输出在绘图框,点击绘图区相应位置可以读出当前点的函数值。工作结果框的每一条记录都可以水平和数值滚动,因此可以在有限范围内看所有数据,数据栏的变量名称亦是如此。</view>
+			<view class='pag'>绘图区仅仅需要输入自变量范围和函数表达式,未知数变量固定为小写x,不能出现别的数值。点击绘制,就能在上方绘制出该函数的图像了,是不是很方便呢?!</view>
+			<image class='img' src='{{src1}}' mode='scaleToFill'></image>
+			<image class='img' src='{{src2}}' mode='scaleToFill'></image>
+			<view class='pag'>注:绘图组件采用《echarts》,一款企业级的绘图组件,以及《echarts.js》库函数完成。</view>
+  	</view>
+	</view>
+ </view>

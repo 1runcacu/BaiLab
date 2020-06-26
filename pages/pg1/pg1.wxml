@@ -1,0 +1,37 @@
+<!--pages/demo01/movable-view/movable-view.wxml-->
+<view class='container1'>
+  <include src='../../common/head.wxml' />
+  <view class='page-body'>
+  <view class='pag'>Bai语言的核心围绕数学运算,因此学习Bai语言,仅需沿着输入、计算、输出的路线来学习Bai语言。</view>
+    <view class='title1'>数据创建</view>
+	<view class='pag'>  Bai语言变量创建非常容易,和matlab的方法一样。分为如下两种方式:</view>
+    <view class='demo-box'>
+      <view class='title1'>1.通过函数快速创建</view>
+	   <view class='pag'>已有方法(diag ones zeros eye :)这些方法和matlab的方法完全相同。</view>
+	  <view class='title1'>diag</view>
+	  <view class='pag'>a1,a2...an均为数字常量,不能含有字母,系统自定义常量e和pi在这里也不能使用,这条语句将会生成一个对角线元素依次为(a1,a2...an)的矩阵</view>
+	   <view class='title1'>ones、zeros</view>
+	    <view class='pag'>ones、zeros为快速创建元素全为1或者全为0的矩阵,写法为{ones(m)/zeros(m)或ones(m,n)/zeros(m,n)}nes(m)和zeros(m)均创建m*m阶元素分别为1和0的方阵ones(m,n)和zeros(m,n)均为创建m*n阶元素分别为1和0的矩阵</view>
+		 <view class='title1'>eye</view>
+		  <view class='pag'>eye(m)为创建m阶单位阵 eye(m,n)为创建m*n阶单位矩阵(其中i=j处元素为1,其余为0)</view>
+	   <view class='title1'>:</view>
+	   <view class='pag'>其中a0:a1将会生成一个列向量,第一个元素为a0,之后每一项增加1,最后一项为不超过a1的数(a0+n),其中a0:d:a1将会生成一个列向量,第一个元素为a0,之后每一项增加d,最后一项为不超过a1的数(a0+n)</view>
+      
+	   <view class='title1'>2.用户输入</view>
+	   <view class='pag'>方法和matlab的一致,同时我给出了补充,关键词为一对中括号,可以是中文符号,譬如{[1,2,3;4,5,6]或者【1；2；3，4，5；6】...},';'分割了每行元素 ','分割了列元素。,如第一个[1,2,3;4,5,6]会得到矩阵: </view>
+	  <view class='pag'>1   2   3</view>
+	  <view class='pag'>4   5   6</view>
+	  <view class='pag'>同时我做出了补充,生成的矩阵没有写元素的位置会自动补全0,如第二个【1；2；3，4，5；6】会得到如下矩阵:</view>
+	  <view class='pag'>1   0   0</view>
+	  <view class='pag'>2   0   0</view>
+	  <view class='pag'>3   4   0</view>
+	  <view class='pag'>6   0   0</view>
+
+    </view>
+	<image class='img' src='{{src[0]}}' mode='scaleToFill'></image>
+	<image class='img' src='{{src[1]}}' mode='scaleToFill'></image>
+	<image class='img' src='{{src[2]}}' mode='scaleToFill'></image>
+	<view class='pag'>上图测试了所有数据创建语句,工作记录较长,因此截了三张图</view>
+  </view>
+  <include src='../../common/foot.wxml' />
+</view>

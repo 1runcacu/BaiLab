@@ -1,0 +1,24 @@
+<view class="container">
+		<view class='box6'><ec-canvas id="mychart" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas></view>
+		<view style="text-align:center">复杂度:{{fuzadu}}%</view>
+		<view class='box3'>
+				<textarea id='text' selection-start='0' selection-end='0' placeholder-class='word' fixed="true" auto-height wx:key='dats2' maxlength="-1" placeholder=">>>输入表达式仅含有x作为自变量" bindinput="cmdwords1"></textarea>
+			</view>	
+		<view class='box3'>
+				<textarea id='text' selection-start='0' selection-end='0' placeholder-class='word' fixed="true" auto-height wx:key='dats2' maxlength="-1" placeholder=">>>输入x的范围" bindinput="cmdwords2"></textarea>
+		</view>
+		<view class='box3'>
+				<textarea id='text' value='{{ncmd3}}' selection-start='0' selection-end='0' placeholder-class='word' fixed="true" auto-height wx:key='dats2' maxlength="-1" placeholder=">>>采样密度(默认1000)" bindinput="cmdwords3"></textarea>
+		</view>
+		<button size='mini' style="width:100%" form-type='submit' bindtap='running'>绘制</button>
+</view>
+
+		
+		        
+
+				
+		
+		
+		
+		       
+		

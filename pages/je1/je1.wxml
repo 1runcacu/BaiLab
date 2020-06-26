@@ -1,0 +1,21 @@
+<!--pages/demo01/movable-view/movable-view.wxml-->
+<view class='container1'>
+  <include src='../../common/head.wxml' />
+  <view class='page-body'>
+    <view class='title1'>1.函数图像的绘制</view>
+    <view class='demo-box'>
+			<view class='pag'>Bai语言的核心功能2是轻松绘制函数图像,暂不支持散点图,采取的是折线图的方式。一共有两种方式进行绘制函数图像,第一种就是在交互界面用指令plot进行画图,另一种则是通过绘图界面快速绘图,plot的功能更加齐全,绘图界面的绘制更加简洁明了。</view>
+			<view class='title1'>(1)plot指令画图。</view>
+			<view class='pag'>plot采用的语法与matlab的语法相同 plot(x,y),其中x,y可以是向量,也可以是矩阵,还可以是复杂的表达式,建议x从小到大排列,可以用”:”表达式先生成自变量范围</view>
+			<view class='title1'>(2)绘图界面绘图。</view>
+			<view class='pag'>绘图界面输入带x的表达式,输入x的范围(中间用’,’逗号分隔),再点击	绘图即可。其中界面内的100为采样点数,上限为1w,下限为1,值越大渲染越慢,但越圆滑。个人建议100足以满足需求,往往没必要增大计算量。且这个页面*等效为#运算,可以反放心写表达式。</view>
+			<image class='img' src='{{src1}}' mode='scaleToFill'></image>
+			<view>该图与matlab的图进行对照,证明结果计算是准确的,同时绘制也是准确的。</view>
+			<image class='img1' src='{{src2}}' mode='scaleToFill'></image>
+			<image class='img1' src='{{src3}}' mode='scaleToFill'></image>
+			<image class='img1' src='{{src4}}' mode='scaleToFill'></image>
+			<image class='img1' src='{{src5}}' mode='scaleToFill'></image>
+			<view>右边两幅就是采样100次和10000次,一般情况下,不涉及太多震荡不必要采样如此多。</view>
+  	</view>
+	</view>
+ </view>

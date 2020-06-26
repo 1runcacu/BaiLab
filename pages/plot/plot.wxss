@@ -1,0 +1,42 @@
+scroll-view {
+  white-space: nowrap;
+  width:100%;
+  font-size: 25rpx;
+  display: flex;
+  justify-content:flex-start;
+}
+.scroll-item-x {
+  margin: 0;
+  width:100%;
+  height: 420rpx;
+  display: inline-block;
+  justify-content:flex-start;
+}
+.box3{
+  margin: 3rpx;
+  padding: 1rpx;
+  width:100%;
+  border: 1rpx solid silver;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-align: center;
+}
+.box6{
+  margin: 1rpx;
+  padding: 1rpx;
+  border: 1rpx solid silver;
+  width:100%;
+  height:800rpx;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 10px;
+  text-align: left;
+  font-size: 25rpx;
+  flex-shrink:3;
+  text-align: center;
+}
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}

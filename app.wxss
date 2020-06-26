@@ -1,0 +1,33 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #F8F8F8;
+  justify-content: space-between;
+  padding: 1rpx;
+}
+
+.page-head{
+  font-size: 38rpx;
+  padding: 15rpx;
+}
+
+.title{
+  padding: 15rpx;
+}
+
+.demo-box{
+  margin: 3rpx;
+  border: 2rpx solid silver;
+}
+
+navigator{
+  text-align: left;
+  padding: 10rpx;
+  margin: 10rpx;
+  border-bottom: 1rpx solid silver;
+}
+
+.page-foot{
+  font-size: 30rpx;
+}

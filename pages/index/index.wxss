@@ -1,0 +1,90 @@
+scroll-view {
+  white-space: nowrap;
+  width:100%;
+  font-size: 25rpx;
+  display: flex;
+  justify-content:flex-start;
+}
+.scroll-item-x {
+  margin: 0;
+  width:100%;
+  height: 420rpx;
+  display: inline-block;
+  justify-content:flex-start;
+}
+.box0{
+  height: 420rpx;
+  width:30px;
+  border: 2rpx solid silver;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 25rpx;
+}
+.box1{
+  height: 420rpx;width:100%;
+  border: 2rpx solid silver;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 30rpx;
+}
+.box2{
+  height: 420rpx;
+  width:100%;
+  border: 2rpx solid silver;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 30rpx;
+}
+.box3{
+  margin: 1rpx;
+  padding: 1rpx;
+  width:80%;
+  border: 1rpx solid silver;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.box4{
+  margin: 1rpx;
+  padding: 1rpx;
+
+  width:100%;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 10px;
+  text-align: left;
+  font-size: 45rpx;
+  flex-shrink:0.5;
+}
+.box5{
+  margin: 1rpx;
+  padding: 1rpx;
+  border: 1rpx solid silver;
+ 
+  display: flex;
+  justify-content: flex-end;
+  line-height: 10px;
+  text-align: left;
+  font-size: 25rpx;
+  flex-shrink:3;
+}
+.box6{
+  margin: 1rpx;
+  padding: 1rpx;
+  border: 1rpx solid silver;
+  width:100%;
+  height:500rpx;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 10px;
+  text-align: left;
+  font-size: 25rpx;
+  flex-shrink:3;
+}
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}

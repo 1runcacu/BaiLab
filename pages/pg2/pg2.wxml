@@ -1,0 +1,14 @@
+<!--pages/demo01/movable-view/movable-view.wxml-->
+<view class='container1'>
+  <include src='../../common/head.wxml' />
+  <view class='page-body'>
+    <view class='title1'>赋值语句</view>
+    <view class='demo-box'>
+	<view class='pag'>Bai语言赋值语句非常简单,'='等于号作为赋值运算符,居右左结合性,将等于号右边计算出的值赋值给左边的变量</view>
+	   <view class='pag'>如{a=diag(a1,a2,...an)、b=ones(3,4)、c=cospi*sina...},如下图所示界面,创建了三组数据并赋值,其中第三个表达式{c=cospi*sina}为数学表达式,运算结果赋值给c。</view>
+   </view>
+	<image class='img' src='{{src}}' mode='scaleToFill'></image>
+	<view class='pag'>注:代码中的{read}关键词的含义为执行表达式的同时,输出表达式结果,方便用户进行查询结果。</view>
+  </view>
+  <include src='../../common/foot.wxml' />
+</view>

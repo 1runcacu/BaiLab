@@ -1,0 +1,14 @@
+<!--pages/demo01/movable-view/movable-view.wxml-->
+<view class='container1'>
+  <include src='../../common/head.wxml' />
+  <view class='page-body'>
+    <view class='title1'>输出语句</view>
+    <view class='demo-box'>
+	<view class='pag'>Bai语言输出表达式的值和查询变量的值非常容易,不写等于号,直接写变量名,或者直接写数学表达式,或者赋值给一个空(如{ =sinpi }),或者在命令框中任意位置加入read,就可以在执行之后看到结果啦。</view>
+   </view>
+	<image class='img' src='{{src1}}' mode='scaleToFill'></image>
+	<image class='img' src='{{src2}}' mode='scaleToFill'></image>
+	<view class='pag'>对比两个图,不难发现左边没有加read关键词,所以前三个赋值语句没有输出,只输出了后面的参数和表达式的值,右边加入了read关键词,因此赋值语句也会输出。</view>
+  </view>
+  <include src='../../common/foot.wxml' />
+</view>

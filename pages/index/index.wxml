@@ -1,0 +1,35 @@
+<view class="container">
+    <view class='box1'>
+			<view class='box0'>工作详情>>></view>
+				<scroll-view class='box2' scroll-y="true">
+					<view wx:if='{{logs.length==0}}'>暂无</view>
+					<scroll-view  wx:for='{{logs}}' wx:key='s{{index}}' scroll-x="true">
+						<view wx:key='s{{index}}'>{{item}}</view>
+					</scroll-view>
+				</scroll-view>
+   		</view>
+		<view class='box4'>
+			<view class='box3'>
+				<textarea id='text' selection-start='0' selection-end='0' placeholder-class='word' fixed="true" auto-height wx:key='dats2' maxlength="-1" placeholder=">>>输入?试试" bindinput="cmdwords"></textarea>
+			</view>
+			<view class='box5' scroll-y="true">
+				<scroll-view  scroll-y="true">
+				<button size='mini' style="width:100%" form-type='submit' bindtap='running'>执行</button>
+	  			<view>数据栏</view>
+	  			<view wx:if='{{datsn.length==0}}'>null</view>
+     			 <view wx:for='{{datsn}}' wx:key='d{{index}}'>{{item}}</view>
+  			 </scroll-view>
+			</view>
+		</view>
+		<view class='box6'><ec-canvas id="mychart" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas></view>
+</view>
+
+		
+		        
+
+				
+		
+		
+		
+		       
+		

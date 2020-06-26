@@ -1,0 +1,20 @@
+<!--pages/demo01/movable-view/movable-view.wxml-->
+<view class='container1'>
+  <include src='../../common/head.wxml' />
+  <view class='page-body'>
+    <view class='title1'>2.几个简单的系统指令</view>
+    <view class='demo-box'>
+		<view class='title1'>clear指令</view>
+		<view class='pag'>语法为:{clear(a,b...n)或者clear}前者会对所有括号内的变量名以及对应值进行删除,后者则删除所有变量。</view>
+		<view class='title1'>cls指令</view>
+		<view class='pag'>清空工作详情所有内容</view>
+		<view class='title1'>setting指令</view>
+		<view class='pag'>语法为setting加0到9的任何数字,修改程序运算结果保留的小数点位数。譬如{setting6}将会保留6位小数。</view>
+		<view class='title1'>read指令</view>
+		<view class='pag'>在工作栏任意位置处加read,会输出所有指令的运算结果,包括变量创建的结果。</view>
+		<view class='title1'>?指令</view>
+		<view class='pag'>单一的’?’会打开手册界面,？加关键词会在工作栏输出该关键词作用,遇到运算符会输出运算符计算功能和运算定义,遇到函数则会显示函数功能以及参数内容</view>
+    </view>
+  </view>
+  <include src='../../common/foot.wxml' />
+</view>

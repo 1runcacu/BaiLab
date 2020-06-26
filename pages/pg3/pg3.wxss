@@ -1,0 +1,21 @@
+.container1{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 20rpx;
+  padding: 15rpx;
+}
+.img{
+  width:100%;
+  height:500rpx;
+}
+.title1{
+  padding: 15rpx;
+  font-size: 35rpx;
+}
+.pag{
+  padding: 15rpx;
+  font-size: 20rpx;
+}
